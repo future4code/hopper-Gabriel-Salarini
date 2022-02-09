@@ -7,7 +7,7 @@
 
 //3 - let horasTrabalho = prompt("Quantas horas você trabalha por dia?")
 //    let salarioPorDia = prompt("Quanto você recebe por dia?")
-//    alert(`Voce recebe ${t/p} por hora`)
+//    alert(`Voce recebe ${salarioPorDoa/horasTrabalho} por hora`)
 
 //Exercícios de escrita de código
 
