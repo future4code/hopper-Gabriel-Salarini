@@ -21,7 +21,7 @@ function calculaAreaRetangulo() {
   const altura = Number(prompt('Digite a altura do retangulo'))
   const largura = Number(prompt('Digite a largura do retangulo'))
   const alturaRetangulo = altura
-  const larguraRetangulo = largura 
+  const larguraRetangulo = largura
 
   console.log (alturaRetangulo*larguraRetangulo)
 }
@@ -37,20 +37,21 @@ function imprimeIdade() {
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
-  const peso = Number(prompt('Quantos kg você pesa?'))
-  const altura2 = Number(prompt('Qual a sua altura?'))
+  const pesoEmKg = Number(prompt('Quantos kg você pesa?'))
+  const alturaEmMetros = Number(prompt('Qual a sua altura?'))
 
-  return peso / (altura*altura)
-
+  return peso/(altura * altura)
 }
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
-const nomeUsuario = prompt("Digite seu nome!")
-const idadeUsuario = Number(prompt('Digite sua idade!'))
-const emailUsuario = prompt('Digite seu email')
+  const nomeUsuario = prompt("Digite seu nome!")
+  const idadeUsuario = Number(prompt('Digite sua idade!'))
+  const emailUsuario = prompt('Digite seu email')
+  const nomeUsuario2 = nomeUsuario + ','
+  const emailUsuario2 = emailUsuario + '.'
 
-console.log('Meu nome é', nomeUsuario,'tenho', idadeUsuario, 'anos, e o meu email é', emailUsuario,'.')
+  console.log("Meu nome é " + nomeUsuario2 + " tenho " + idadeUsuario + ' anos, e o meu email é ' + emailUsuario2)
 
 }
 
@@ -59,53 +60,57 @@ function imprimeTresCoresFavoritas() {
   const corfavorita1 = prompt('Digite sua primeira cor favorita')
   const corfavorita2 = prompt('Digite sua segunda cor favorita')
   const corfavorita3 = prompt('Digite sua terceira cor favorita')
+  const novaArray = [corfavorita1, corfavorita2, corfavorita3]
 
-  console.log(corfavorita1)
-  console.log(corfavorita2)
-  console.log(corfavorita3)
+  console.log(novaArray)
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
+  
 
-  return ('oi'.toUpperCase())
-
+  return string.toUpperCase()
+  
 }
-
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  let custo = 1000
-  const valorIngresso = 20
+  let custoIngresso = 1000
+  const valorDoIngresso = 20
 
-  return custo/valorIngresso
+  return (custo/valorIngresso)
+
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  const string1 = 'primeira string'
-  const string2 = 'segunda string'
 
-  return if (string1 > string2)
-     
-
+  return string1.length == string2.length
+  
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  
+
+  return array[0]
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
 
+  return (array[array.length -1]) 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
+  const trocaDeLugar = array.indexOf(0)
+    if (trocaDeLugar !== -1) {
+      array[trocaDeLugar] = 
+    }
 
+  return array
+  console.log(trocaDeLugar)
 }
 
 // EXERCÍCIO 12
