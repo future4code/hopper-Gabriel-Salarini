@@ -104,19 +104,28 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  const trocaDeLugar = array.indexOf(0)
-    if (trocaDeLugar !== -1) {
-      array[trocaDeLugar] = 
-    }
+  const primeiroElemento = array[0]
+  const removerPrimeiro = array.shift(primeiroElemento)
+  const ultimoElemento = array[array.length -1]
+  const removerUltimo = array.pop(ultimoElemento)
 
+  const novoPrimeiro = array.unshift(ultimoElemento)
+  const novoUltimo = array.push(primeiroElemento)
+  
   return array
-  console.log(trocaDeLugar)
-}
+
+  
+    } 
+
+
+
+
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  // implemente sua lógica aqui
+  const resultado = string1 && string2
 
+  return resultado
 }
 
 // EXERCÍCIO 13
@@ -136,3 +145,4 @@ function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
 
 }
+
