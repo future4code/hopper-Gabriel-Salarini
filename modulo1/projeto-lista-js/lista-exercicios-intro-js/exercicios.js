@@ -123,10 +123,11 @@ function trocaPrimeiroEUltimo(array) {
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  const resultado = string1 && string2
+  
 
-  return resultado
+  return string1.toUpperCase() === string2.toUpperCase()
 }
+console.log(checaIgualdadeDesconsiderandoCase)
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
