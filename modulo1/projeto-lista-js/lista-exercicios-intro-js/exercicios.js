@@ -126,6 +126,7 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
   
 
   return string1.toUpperCase() === string2.toUpperCase()
+  
 }
 console.log(checaIgualdadeDesconsiderandoCase)
 
