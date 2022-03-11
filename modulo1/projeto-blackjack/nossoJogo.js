@@ -11,53 +11,53 @@
  * 
  */
 
-    console.log("Boas vindas ao jogo de Blackjack!")
+   console.log("Boas vindas ao jogo de Blackjack!")
 
-    if (confirm("Quer iniciar uma nova rodada?")) {
+   if (confirm("Quer iniciar uma nova rodada?")) {
        console.log("Iniciando nova rodada")
-    } else {
+   } else {
        console.log("O jogo acabou")
-    }
+   }
 
-    const carta = comprarCarta();
-    const carta2 = comprarCarta();
+   const carta = comprarCarta();
+   const carta2 = comprarCarta();
 
-    const usuario = {
+   const usuario = {
       texto:carta.texto,
       valor:carta.valor,
       texto2:carta2.texto,
       valor2:carta2.valor
-    }
-    const pontuaçãoSoma= usuario.valor + usuario.valor2
+   }
+   const pontuaçãoSoma= usuario.valor + usuario.valor2
 
-console.log(usuario)
+   console.log(usuario)
    
    const carta3 = comprarCarta();
    const carta4 = comprarCarta();
 
    const computador = {
 
-   texto:carta3.texto,
-   valor:carta3.valor,
-   texto2:carta4.texto,
-   valor2:carta4.valor
-}
+      texto:carta3.texto,
+      valor:carta3.valor,
+      texto2:carta4.texto,
+      valor2:carta4.valor
+   }
    const pontuaçãoSoma2 = computador.valor + computador.valor2
-console.log(computador)
+   console.log(computador)
 
-console.log(`Usuário - cartas: ${usuario.texto} ${usuario.texto2} - pontuação ${pontuaçãoSoma}`)
-console.log(`Computador - cartas: ${computador.texto} ${computador.texto2} - pontuação ${pontuaçãoSoma2}`)
+   console.log(`Usuário - cartas: ${usuario.texto} ${usuario.texto2} - pontuação ${pontuaçãoSoma}`)
+   console.log(`Computador - cartas: ${computador.texto} ${computador.texto2} - pontuação ${pontuaçãoSoma2}`)
     
-function resultadoPartida (){
-   if(pontuaçãoSoma > pontuaçãoSoma2){
+   function resultadoPartida (){
+      if(pontuaçãoSoma > pontuaçãoSoma2){
       console.log("O usuário ganhou!")
    }
-   else if (pontuaçãoSoma < pontuaçãoSoma2){
+      else if (pontuaçãoSoma < pontuaçãoSoma2){
       console.log("O computador ganhou!")
    }
-   else if (pontuaçãoSoma === pontuaçãoSoma2){
+      else if (pontuaçãoSoma === pontuaçãoSoma2){
       console.log("Emapte!")
    }
-   return 
-}
-console.log(resultadoPartida())
+      return 
+   }
+   console.log(resultadoPartida())
