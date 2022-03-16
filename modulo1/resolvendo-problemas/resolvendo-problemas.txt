@@ -17,4 +17,4 @@ diagramas, e pensar nos cenarios de input e output.
 6º Passo; (Testar na Força Bruta): Escrever de uma forma simples no meu proprio idioma pensando em soluções obvias para depois trans-
 crever para a linguagem de programação.
 
-7º Passo; (Refatorar): Limpar a "sujeira" do código, verificar nomes de variaveis, camelcase, separar funções, etapa por etapa.
+7º Passo; (Refatorar): Limpar a "sujeira" do código, verificar nomes de variaveis, camelcase, separar funções, etapa por etapa. 
