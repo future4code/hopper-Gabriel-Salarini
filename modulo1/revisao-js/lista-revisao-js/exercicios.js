@@ -19,15 +19,19 @@ return array.reverse()
 function retornaArrayOrdenado(array) {
     function compararFuncao(a, b){
         return a - b
-}   return array.sort(compararFuncao)
+    }
+  return array.sort(compararFuncao)
+}
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
     
-        
-    
-return 
+                 
+
 }
+    
+
+
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
@@ -36,7 +40,7 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  return Math.max.apply(null, array)
 }
 
 // EXERCÍCIO 07
