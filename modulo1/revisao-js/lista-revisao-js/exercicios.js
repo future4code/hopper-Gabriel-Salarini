@@ -17,8 +17,9 @@ return array.reverse()
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-    
-}
+    function compararFuncao(a, b){
+        return a - b
+}   return array.sort(compararFuncao)
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
