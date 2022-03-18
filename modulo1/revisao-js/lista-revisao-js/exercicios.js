@@ -103,7 +103,9 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+    let apenasDoisValores = array.sort((a,b)=> a - b)
+
+    return [apenasDoisValores[apenasDoisValores.length-2], apenasDoisValores[1]]
 }
 
 // EXERCÍCIO 11
