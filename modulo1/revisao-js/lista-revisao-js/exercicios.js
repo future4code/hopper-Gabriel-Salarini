@@ -25,9 +25,13 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-    
-                 
-
+    let numeroPar = []
+    for(let i = 0; i < array.length; i++){
+        if (array[i] % 2 === 0){
+            numeroPar.push(array[i])
+        }
+    }           
+    return numeroPar
 }
     
 
@@ -45,7 +49,7 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-
+    
 }
 
 // EXERCÍCIO 08
