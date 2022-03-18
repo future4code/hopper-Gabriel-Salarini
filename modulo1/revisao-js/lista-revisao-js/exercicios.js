@@ -6,13 +6,13 @@
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
     
-return array.length   
+    return array.length   
 } 
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
 
-return array.reverse()
+    return array.reverse()
 }
 
 // EXERCÍCIO 03
@@ -20,7 +20,7 @@ function retornaArrayOrdenado(array) {
     function compararFuncao(a, b){
         return a - b
     }
-  return array.sort(compararFuncao)
+    return array.sort(compararFuncao)
 }
 
 // EXERCÍCIO 04
@@ -51,17 +51,40 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  return Math.max.apply(null, array)
+    return Math.max.apply(null, array)
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-    
+    let meuObjeto = {
+        maiorNumero: 0,
+        maiorDivisivelPorMenor: true,
+        diferenca: 0
+    }
+    if (num1 > num2) {
+        meuObjeto.maiorNumero = num1
+        meuObjeto.maiorDivisivelPorMenor = (num1 % num2 === 0)
+        meuObjeto.diferenca = num1 - num2
+    } else {
+        meuObjeto.maiorNumero = num2
+        meuObjeto.maiorDivisivelPorMenor = (num2 % num1 === 0)
+        meuObjeto.diferenca = num2 - num1
+    }
+
+    return meuObjeto
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+    let nNumerosPar = []
+    let i = 0
+    let num2 = 0
+    while (i < n) {
+        nNumerosPar.push(num2)
+        num2 += 2
+        i++
+    }
+    return nNumerosPar
 }
 
 // EXERCÍCIO 09
