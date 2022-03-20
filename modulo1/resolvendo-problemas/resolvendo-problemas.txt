@@ -1,0 +1,20 @@
+Resumo sobre os 7 passos fundamentais para a resolução de problemas:
+
+1º Passo; (Ter atenção no Enunciado): É importante antes de começãr diretamente a escrever o código, identificar e entender as informa-
+ções passadas no enunciado, se perguntar o que o código que eu vou escrever deve fazer para saber o caminho que devo seguir.
+
+2º Passo; (Retirar Informações Relevantes): Após ler as informações passadas no enunciado, devemos separar em palavras chaves as infor-
+mações relevantes, verbos e funções. Depois se perguntar se "há alguma condição para a existência do código?". 
+
+3º Passo; (Pensar Entradas e Saidas): Procurar quais serão os dados recebidos, pensar em como vai formular o código, estrutura, fun-
+ções e etc.
+
+4º Passo; (Fazer um Esquema Visual): Tentar colocar o que esta na mente no papel, de forma facil e simples de entender, com exemploes,
+diagramas, e pensar nos cenarios de input e output.
+
+5º Passo; (Criar um Código Feio): Colocar em pratica do papel para o código.
+
+6º Passo; (Testar na Força Bruta): Escrever de uma forma simples no meu proprio idioma pensando em soluções obvias para depois trans-
+crever para a linguagem de programação.
+
+7º Passo; (Refatorar): Limpar a "sujeira" do código, verificar nomes de variaveis, camelcase, separar funções, etapa por etapa. 
