@@ -161,4 +161,4 @@ function retornaArrayOrdenadoPorData(consultas) {
         data2 = data2.dataDaConsulta.split("/").reverse().join()
         return data1.localeCompare(data2)
     })
-}
+} 
