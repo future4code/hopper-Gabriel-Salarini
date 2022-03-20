@@ -11,6 +11,7 @@
  * 
  */
 
+ projeto-blackjack
    console.log("Boas vindas ao jogo de Blackjack!")
 
    if (confirm("Quer iniciar uma nova rodada?")) {
@@ -61,3 +62,43 @@
       return 
    }
    console.log(resultadoPartida())
+
+// 1-
+
+console.log('Boas vindas ao jogo de Blackjack!')
+
+//---------------------------------------------------------
+
+// 2-
+const iniciarNovaRodada = confirm('Quer iniciar uma nova rodada?')
+
+//-----------------------------------------------------------------
+
+// 3 e 4 -
+
+if (iniciarNovaRodada === true){
+   console.log('O jogo vai começar!')
+} else{
+   console.log('O jogo acabou :(')
+}
+
+//----------------------------------------
+
+// 5-
+
+const carta = comprarCarta();
+
+console.log(carta.texto) 
+
+console.log(carta.valor)
+
+//----------------------------------------
+
+// 6-
+
+console.log(`Usuário - cartas: ${carta.texto} ${carta.texto} - pontuação ${carta.valor}`)
+   
+   
+
+
+master
