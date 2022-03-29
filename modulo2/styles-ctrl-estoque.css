@@ -1,0 +1,15 @@
+header{
+    background-color: #391542;
+    padding-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+footer{
+    background-color: #391542;
+    padding-bottom: 50px;
+}
