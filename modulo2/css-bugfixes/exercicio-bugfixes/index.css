@@ -70,6 +70,10 @@ div>p:first-child {
     width: 15px;
 }
 
+li{
+    display: list-item;
+    list-style-position: inside;
+}
 
 
 /** 
