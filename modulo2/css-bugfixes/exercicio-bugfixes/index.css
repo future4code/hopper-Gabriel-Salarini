@@ -25,6 +25,14 @@ button:focus {
     color: white;
 }
 
+button:active{
+    color: white;
+}
+
+button:hover{
+    background-color: #9b8731;
+}
+
 img {
     width: 50px;
 }
