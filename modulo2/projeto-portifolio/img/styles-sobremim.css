@@ -13,6 +13,11 @@ header{
     
 }
 
+.Nome-Header{
+    color: white;
+    font-size: 25px;
+}
+
 ul, li, a{
     text-decoration: none;
     list-style: none;
@@ -31,35 +36,21 @@ a:hover{
     
 }
 
-.Nome-Header{
-    color: white;
-    font-size: 25px;
+h1{
+    text-decoration: underline;
 }
 
-
-.Perfil{
+body{
     background-color: #9370DB;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+main{
+    
     color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.foto-perfil{
-    width: 370px;
-}
-
-.front-end{
-    padding-left: 75px;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 footer{
     background-color: #363636;
@@ -68,4 +59,7 @@ footer{
     align-items: center;
     color: white;
     padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
