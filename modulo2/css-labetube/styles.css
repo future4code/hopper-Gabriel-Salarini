@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: orange;
+    padding: 30px 40px 30px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body > h2{
+    text-align: center;
+}
+
+#busca{
+    width: 120px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 30px;
+}
+
+video{
+    padding-left: 55%;
+    width: 600px;
+}
+
+.img-capa {
+    width: 250px;
+    height: 150px;
+}
+
+.icone-imagem {
+    height: 200px;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgb(21, 223, 102);
+    text-align: center;
+}
+
+
+footer{
+    background-color: gray;
+    text-align: center;
+    padding: 20px 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
