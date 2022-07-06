@@ -5,7 +5,85 @@ import { useRequestData } from '../hooks/useRequestData'
 import { useNavigate } from 'react-router-dom'
 import { goToCreateTripPage, goToTripDetailsPage, goToLoginPage, goToHomePage, goToAdminHomePage } from '../routes/Coordinator'
 
+const Header = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color:black;
+  border: 1px solid black;
+  color:white;
+  padding: 0px 0px 0px 15px;
+`
 
+const Main = styled.div`
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    display: grid;
+    justify-items: center;
+    background-color:#87CEEB;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+  }
+  display: grid;
+  justify-items: center;
+  background-color:#87CEEB;
+  color: black;
+  border: 1px solid black;
+  padding: 20px 0px 20px 0px;
+`
+
+const ContainerFirst = styled.div`
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color:#EEE9E9;
+    color: black;
+    border: 1px solid black;
+    padding: 30px 30px 30px 30px;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color:#EEE9E9;
+  color: black;
+  border: 1px solid black;
+  padding: 75px 75px 75px 75px;
+`
+
+const Footer = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color:#191970;
+  border: 1px solid black;
+  color:white;
+  padding: 0px 0px 0px 15px;
+`
+
+const Button = styled.button`
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    padding:20px 70px 20px 70px;
+    margin-bottom: 10px;
+    background-color:#191970;
+    border: 1px solid black;
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  padding: 10px 50px 10px 50px;
+  margin-bottom: 10px;
+  background-color:#191970;
+  border: 1px solid black;
+  color:white;
+  border-radius: 5px;
+  &:hover {
+    background-color: #87CEEB;
+    color:black;
+  }
+`
 
 const AdminHomePage = () => {
   const navigate = useNavigate()
@@ -35,13 +113,13 @@ const AdminHomePage = () => {
 
   const allTrips = 
   tripsList.trips && tripsList.trips.map((trip) => {
-  return <div>
+  return <ContainerFirst>
       <li key={trip.id}> <b>
       {trip.name} </b></li>
       <br />
       <Button onClick={() => getTripDetails(trip.id)}>Detalhes da viagem</Button>
       <Button onClick={() => deleteTrip(trip.id)}>Deletar Viagem</Button>
-    </div>
+    </ContainerFirst>
   })
 
 
@@ -64,10 +142,10 @@ const AdminHomePage = () => {
 
   return (
     <>
-      <div>
+      <Header>
         <h2>Administrador - Home</h2>
-      </div>
-      <div>
+      </Header>
+      <Main>
       <Button onClick={() => goToCreateTripPage(navigate)}>Criar Nova Viagem</Button>
         <br />
         <Button onClick={() => goToHomePage(navigate)}>Home</Button>
@@ -76,10 +154,10 @@ const AdminHomePage = () => {
         <h3>Viagens Cadastradas</h3>
         {allTrips}
         <br />
-      </div>
-      <div>
+      </Main>
+      <Footer>
         <p>Labex</p>
-      </div>
+      </Footer>
     </>
   )
 }
